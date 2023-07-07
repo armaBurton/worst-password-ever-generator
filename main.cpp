@@ -20,6 +20,11 @@ int main(){
     getWord(word);
     getYear(year);
     getSpecial(special);
+
+    cout << "Here is your new password: " ;
+    cout << word;
+    cout << year;
+    cout << special << endl;
     
     system("pause");
     return 0;
@@ -58,7 +63,4 @@ void getYear(char year[]){
 void getSpecial(char special[]){
     cout << "Enter a special character, characters after the first will be ignored: ";
     cin.getline(special, SPECIAL_CHARACTER, '\n');
-    // cin.ignore();
-    cout << strlen(special) << endl;
-    cout << special << endl;
 }
